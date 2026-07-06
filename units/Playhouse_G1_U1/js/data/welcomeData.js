@@ -1,3 +1,23 @@
+var stereo_data = {
+    "audio":"",
+    "exist":false,
+    "bgColor_rgb":"rgb(53, 130, 180)",
+    "type":"text",
+    "playListData" : [
+        {
+          'audiourl': '../audios/demo.mp3',
+        },
+        {
+          'url': '',
+        },
+        {
+          'url': '',
+        },
+        {
+          'url': '',
+        }
+    ],
+  }
 var welcome_data = {
     
 	"apk": '',
