@@ -53,6 +53,16 @@ var _activityData = {
       },
       //Draw
       {
+         "file"               : "drawqa.html",
+         'type'               : 'drawqa',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+      {
          "file"               : "fillin_with_border.html",
          'type'               : 'fillin',
          'subtype'            : '',

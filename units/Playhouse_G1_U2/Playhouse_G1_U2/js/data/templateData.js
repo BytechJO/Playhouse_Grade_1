@@ -45,7 +45,7 @@ var _data = {
         "filetoload" : [],
         "homebutton" : {
             'visible'   : 'yes', // yes (or) no
-            'link'      : 'main.html'
+            'link'      : 'index.html'
         },
         "booksbutton" : {
             "workbook": {

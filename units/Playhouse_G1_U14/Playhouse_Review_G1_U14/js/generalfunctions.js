@@ -693,8 +693,8 @@ function doWindowResize() {
     //-------------
     if (isMobile()) maskWidth = 0;
     if ($('.mask_parent').length > 0) {
-        $('.mask_left').css('width', maskWidth);
-        $('.mask_right').css('width', maskWidth);
+        // $('.mask_left').css('width', maskWidth);
+        // $('.mask_right').css('width', maskWidth);
 
         $('.rotator').css('right', (Number(maskWidth.slice(0, -2)) - 15).toString() + 'px');
     }

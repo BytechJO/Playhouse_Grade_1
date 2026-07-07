@@ -135,42 +135,42 @@
 }
 
 .que[data-qno="9"]{
-    top: 232px;
+    /* top: 232px; */
     left: 70px;
 }
 
 .que[data-qno="10"]{
-    top: 232px;
+    /* top: 232px; */
     left: 286px;
 }
 
 .que[data-qno="11"]{
-    top: 232px;
+    /* top: 232px; */   
     left: 504px;
 }
 
 .que[data-qno="12"]{
-    top: 232px;
+    /* top: 232px; */
     left: 710px;
 }
 
 .que[data-qno="13"] {
-    top: 458px;
+    top: 370px;
     left: 75px;
 }
 
 .que[data-qno="14"] {
-    top: 458px;
+    top: 370px;
     left: 286px;
 }
 
 .que[data-qno="15"] {
-    top: 458px;
+    top: 370px;
     left: 504px;
 }
 
 .que[data-qno="16"] {
-    top: 458px;
+    top: 370px;
     left: 710px;
 }
 

@@ -23,7 +23,7 @@ var _data = {
 
        "homebutton" : {
         'visible'   : 'yes', // yes (or) no
-        'link'      : 'main.html'
+        'link'      : 'index.html'
        },
        // "rightIcon": "./images/unit-icon.png",    
        "audio": "./audios/page_88/UNIT_12-He_Works_in_an_Office.mp3",

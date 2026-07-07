@@ -33,6 +33,7 @@ function setNavigationFiles(aIndx, aObj) {
             $('.nextNav').find('a').attr("href", ((aObj.list)[aIndx + 1]).file);
         }
     }
+    // buildPageNumbers(aObj, thisIndex, totalNumOfActivities);
 }
 
 function buildPageNumbers(aObj, aIndx, aTotalNum) {
@@ -229,7 +230,12 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new DragAndDrop(quePart, dragndrop_data);
     } else if (aActTyp == 'coloring') {
         theActivity = new Coloring(quePart, coloring_data);
-    } else if (aActTyp == 'standAlone') {
+    } else if (aActTyp == 'drawwrite') {
+        theActivity = new DrawWrite(quePart, drawwrite_data);
+    } else if (aActTyp == 'circleunderline') {
+        theActivity = new CircleUnderline(quePart, circleunderline_data);
+    } 
+     else if (aActTyp == 'standAlone') {
         theActivity = "standAlone";
 
     } else {

@@ -188,9 +188,9 @@ function initSketchpad() {
     });
 
     // mandala
-    document.getElementById('tool-type').addEventListener("click", function () {
-        selectTool("type");
-    });
+    // document.getElementById('tool-type').addEventListener("click", function () {
+    //     selectTool("type");
+    // });
 
     //eraser
     document.getElementById('tool-eraser').addEventListener("click", function () {
@@ -227,19 +227,17 @@ function initSketchpad() {
     //     selectTool("rotate-viewport");
     // });
 
-    document.getElementById('tool-zoom-in').addEventListener("click", function () {
-        sketchpad.setScale(sketchpad.scale * 2);
-    });
-    document.getElementById('tool-zoom-1').addEventListener("click", function () {
-        sketchpad.setScale(1);
-        sketchpad.setViewportPosition(0, 0);
-        sketchpad.setRotation(0);
-    });
+document.getElementById('tool-zoom-in').addEventListener("click", function () {
+    document.body.style.zoom = (parseFloat(document.body.style.zoom) || 1) + 0.1;
+});
 
-    document.getElementById('tool-zoom-out').addEventListener("click", function () {
-        sketchpad.setScale(sketchpad.scale / 2);
-    });
+document.getElementById('tool-zoom-out').addEventListener("click", function () {
+      document.body.style.zoom = 1;
+});
 
+document.getElementById('tool-zoom-1').addEventListener("click", function () {
+    window.location.href = '../../../index.html';
+});
     // document.getElementById('reset').addEventListener("click", function () {
     //     sketchpad.reset();
     // });

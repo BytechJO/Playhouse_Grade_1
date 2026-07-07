@@ -546,7 +546,7 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-
+/* 
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -569,7 +569,7 @@ pre code {
   .container {
     max-width: 1140px;
   }
-}
+} */
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
@@ -578,7 +578,7 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-
+/* 
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
@@ -601,7 +601,7 @@ pre code {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
   }
-}
+} */
 
 .row {
   display: -ms-flexbox;

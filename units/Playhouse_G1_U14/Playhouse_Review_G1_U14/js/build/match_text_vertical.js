@@ -37,7 +37,7 @@ function buildLineDrawBody(aObj) {
             // ===================================================================== all_cont =====================
 
         htmlStmt += '<div class="cont_ht_sf">';
-        htmlStmt += '<div class="all_cont flex-wrap justify-content-center align-items-center justify-content-lg-center">';
+        htmlStmt += '<div class="all_cont flex-wrap justify-content-center align-items-center justify-content-lg-center" style="height: auto !important;">';
        
 
         //---------------------------------------------

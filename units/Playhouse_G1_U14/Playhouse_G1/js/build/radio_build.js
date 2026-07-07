@@ -43,7 +43,7 @@ function buildStereo(stereo_data){
                                     slideHtml += '<div class="internal_controls">';
                                         slideHtml += '<i class="play fa fa-play"></i>';
                                         slideHtml += '<i class="pause fa fa-pause"></i>';
-                                        slideHtml += '<i class="restart fa fa-sync-alt"></i>';
+                                        slideHtml += '<i class="restart fas fa-sync-alt"></i>';
                                     slideHtml += '</div>';
                                 slideHtml += '</span>';
                                 slideHtml += '<span class="right_Btn"></span>';

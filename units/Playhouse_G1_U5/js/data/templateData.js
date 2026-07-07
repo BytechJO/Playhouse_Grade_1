@@ -19,7 +19,7 @@ var _data = {
 
        "homebutton" : {
         'visible'   : 'yes', // yes (or) no
-        'link'      : 'main.html'
+        'link'      : 'index.html'
        },   
 
        // "rightIcon": "./images/unit-icon.png",    

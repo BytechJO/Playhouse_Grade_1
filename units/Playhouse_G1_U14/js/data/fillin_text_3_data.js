@@ -50,7 +50,7 @@ var fillin_data = {
       "alternateanswer": [[]],
       "strictcase": "no", // yes (or) no  
       "strictorder": "yes", // yes (or) no              
-      "maxlength": 0,
+      "maxlength": 300,
       "type": "text", // text (or) number
     },
     {

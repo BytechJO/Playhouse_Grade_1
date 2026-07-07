@@ -75,6 +75,7 @@
     /* height: 50px; */
     flex-direction: none !important;
     flex-wrap: wrap;
+        margin-bottom: 15px;
 }
 
 .fillin_gr .q_space {

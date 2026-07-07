@@ -1,0 +1,92 @@
+.all_cont{
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.screen_elements{
+    width: 90%;
+    height: 100%;
+}
+
+.blue_text {
+    color: rgb(0, 185, 242);
+    font-size: 27px;
+}
+
+.completesentence_group{
+    width: 95%;
+    max-width: 650px;
+    display: flex;
+    align-items: center;
+}
+
+.cs_item{
+    width: 100%;
+    position: relative;
+    padding: 12px 45px 12px 0;
+    text-align: left;
+}
+
+.cs_set{
+    font-family: Arcon;
+    color: black;
+    font-size: 28px;
+}
+
+.cs_set input{
+    width: 35%;
+    height: 32px;
+    color: black;
+    text-align: center;
+    border: none;
+    margin: 0 8px;
+    border-bottom: 2px solid #595a5a;
+}
+
+.cs_set input:focus{
+    outline: none;
+}
+
+.icon_wrap_holder{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tick,
+.cross{
+    width: 32px;
+}
+
+.tick img,
+.cross img{
+    width: 100%;
+}
+
+/* ---- decorative picture, no interaction ---- */
+.cs_image_wrap{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cs_image_wrap img{
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* ************************************************* */
+@media (max-width: 575.98px) {
+    .cs_set{
+        font-size: 17px;
+    }
+    .cs_set input{
+        width: 55px;
+    }
+}

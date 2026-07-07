@@ -236,7 +236,7 @@ document.getElementById('tool-zoom-out').addEventListener("click", function () {
 });
 
 document.getElementById('tool-zoom-1').addEventListener("click", function () {
-    window.location.href = '../../../main.html';
+    window.location.href = '../../../index.html';
 });
     // document.getElementById('reset').addEventListener("click", function () {
     //     sketchpad.reset();

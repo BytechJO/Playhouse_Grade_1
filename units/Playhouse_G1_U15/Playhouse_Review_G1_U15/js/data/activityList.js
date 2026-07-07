@@ -12,16 +12,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      // {
-      //    "file"               : "fillin_text_in_sentences_2.html",
-      //    'type'               : 'fillin',
-      //    'subtype'            : '',
-      //    'build'              : 'yes', // yes (or) no   
-      //    'activityCtrls'      : 'yes',
-      //    'layout'             : 2,
-      //    'visited'            : 0,
-      //    'score'              : 0,
-      // },
+      {
+         "file"               : "completesentence.html",
+         'type'               : 'completesentence',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       {
          "file"               : "fillin_text_with_background.html",
          'type'               : 'fillin',

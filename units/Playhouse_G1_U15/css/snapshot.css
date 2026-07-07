@@ -1,13 +1,12 @@
 body{
     background-image: url(../images/pages/page-1/page-background-3.png);
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-color: #b3dcd7;
-    position:relative;
+   margin: 0;
+  min-height: 100vh;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% 85%;
+  position: relative;
   }
   
   @-webkit-keyframes glow {
@@ -54,7 +53,10 @@ body{
   }
   
   .readHighlightsBtn {
-      width: 200px;
+      width: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 0 20px;
       border-radius: 51%;
   }
@@ -561,7 +563,7 @@ body{
   
   .readHilightsPanel2_1 .readHilightsPanel_container {
       position: relative;
-      top: 100px;
+      /* top: 100px; */
       /* padding-left: 2rem; */
       /* width: 80%; */
       padding: 34px 46px;

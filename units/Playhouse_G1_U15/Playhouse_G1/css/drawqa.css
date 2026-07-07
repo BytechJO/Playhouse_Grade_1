@@ -1,0 +1,148 @@
+.all_cont{
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.screen_elements{
+    width: 90%;
+    height: 100%;
+}
+
+.blue_text {
+    color: rgb(0, 185, 242);
+    font-size: 27px;
+}
+
+.drawqa_group{
+    width: 95%;
+    max-width: 950px;
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* ---- draw box (canvas) ---- */
+.draw_box{
+    position: relative;
+    flex: 0 0 260px;
+    background: #ffffff;
+    border: 2px solid #35a3d4;
+    border-radius: 16px;
+    min-height: 320px;
+}
+
+.draw_label{
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #2f6fb3;
+    font-weight: bold;
+    font-family: Arcon;
+    z-index: 1;
+}
+
+.draw_canvas{
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: crosshair;
+    touch-action: none;
+}
+
+.clearDrawBtn{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.clearDrawBtn img{
+    width: 100%;
+}
+
+/* ---- question / answer column ---- */
+.qa_col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.qa_pair{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 0;
+}
+
+.q_line,
+.a_line{
+    width: 100%;
+    gap: 12px;
+}
+
+.char_img{
+    flex-shrink: 0;
+    width: 70px;
+}
+.char_img img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.line_input_wrap{
+    flex: 1;
+}
+
+.qa_input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #444;
+    background: transparent;
+    font-family: Arcon;
+    font-size: 30px;
+    color: black;
+    padding-bottom: 2px;
+}
+
+.qa_input:focus{
+    outline: none;
+}
+
+.qmark{
+    font-family: Arcon;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    flex-shrink: 0;
+}
+
+.a_line{
+    justify-content: flex-start;
+}
+
+.a_line .char_img{
+    order: 2;
+}
+.a_line .line_input_wrap{
+    order: 1;
+}
+
+/* ************************************************* */
+@media (max-width: 767.98px){
+    .drawqa_group{
+        flex-direction: column;
+        align-items: center;
+    }
+    .draw_box{
+        width: 100%;
+        max-width: 300px;
+        flex: none;
+        min-height: 220px;
+    }
+}

@@ -23,7 +23,7 @@ var _data = {
 
        "homebutton" : {
         'visible'   : 'yes', // yes (or) no
-        'link'      : 'main.html'
+        'link'      : 'index.html'
        },
        // "rightIcon": "./images/unit-icon.png",    
        "audio": "./audios/page_104/UNIT_14-Seasons_and_Weather.mp3",

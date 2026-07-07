@@ -23,7 +23,7 @@ var _data = {
 
        "homebutton" : {
         'visible'   : 'yes', // yes (or) no
-        'link'      : 'main.html'
+        'link'      : 'index.html'
        },
        // "rightIcon": "./images/unit-icon.png",    
        "audio": "./audios/page_54/UNIT_7_It’s_My_Birthday!.mp3",

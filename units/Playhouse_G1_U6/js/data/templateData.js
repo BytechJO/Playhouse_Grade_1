@@ -23,7 +23,7 @@ var _data = {
 
        "homebutton" : {
         'visible'   : 'yes', // yes (or) no
-        'link'      : 'main.html'
+        'link'      : 'index.html'
        },
        // "rightIcon": "./images/unit-icon.png",    
        "audio": "./audios/page_44/PLAYHOUSE_1_SB_UNIT_6_-I_Can_Whistle!.mp3",

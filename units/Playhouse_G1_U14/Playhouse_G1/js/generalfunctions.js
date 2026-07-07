@@ -510,6 +510,16 @@ function setLoadedStatus(val) {
                                 buildLineDrawBody(linedraw_data);
                             }
                             break;
+                             case 'drawwrite':
+                            if (typeof drawwrite_data != undefined && drawwrite_data != null) {
+                                buildDrawWriteBody(drawwrite_data);
+                            }
+                            break;
+                        case 'circleunderline':
+                            if (typeof circleunderline_data != undefined && circleunderline_data != null) {
+                                buildCircleUnderlineBody(circleunderline_data);
+                            }
+                            break;
                         case 'letterpath':
                             if (typeof letterpath_data != undefined && letterpath_data != null) {
                                 buildLetterPathBody(letterpath_data);
@@ -523,10 +533,7 @@ function setLoadedStatus(val) {
             }
         }
 
-        if (typeof stereo_data != undefined && stereo_data != null) {
-            buildStereo(stereo_data);
-            audio(stereo_data);
-        }
+ 
 
     } else if (val == _currFile) {
         if (_currFile == 'index.html' || _currFile == 'snapshot.html') {
@@ -544,6 +551,7 @@ function setLoadedStatus(val) {
                     case 'wordsearch':
                     case 'linedraw':
                     case 'dragndrop':
+                    case 'circleunderline':
                     case 'coloring':
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;
@@ -696,8 +704,8 @@ function doWindowResize() {
     //-------------
     if (isMobile()) maskWidth = 0;
     if ($('.mask_parent').length > 0) {
-        $('.mask_left').css('width', maskWidth);
-        $('.mask_right').css('width', maskWidth);
+        // $('.mask_left').css('width', maskWidth);
+        // $('.mask_right').css('width', maskWidth);
 
         $('.rotator').css('right', (Number(maskWidth.slice(0, -2)) - 15).toString() + 'px');
     }

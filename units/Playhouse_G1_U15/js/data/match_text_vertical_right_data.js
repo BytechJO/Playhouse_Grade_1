@@ -27,7 +27,7 @@ var linedraw_data = {
     "subTitleTextLeft"      : "<span class='blue_text'>3</span> Match.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/p112match.mp3",
+    "subTitleAudio"         : "../audios/new/p112match.mp3",
     "image"                 : "",
     "rightImage"            : "",
     "rightText"             : [],

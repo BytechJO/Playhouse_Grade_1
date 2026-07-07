@@ -53,7 +53,7 @@ function buildFillInBody(aObj) {
 
 				htmlStmt += '<div class="p-0 q_box align-content-between flex-wrap">'; // put hight in css or data 
 												 
-				htmlStmt += '<div class="que que_' + currentQue + ' h-100 d-flex flex-wrap" data-qno="' + (currentQue) + '">';
+				htmlStmt += '<div class="que que_' + currentQue + ' h-100 d-flex" data-qno="' + (currentQue) + '">';
 				// htmlStmt += '<span class="q_order">' +currentQue+ '</span>';
 				htmlStmt += '<div class="image_space"><img src="' + ((aObj.questions)[currentQue - 1]).image + '"></div>';
 				htmlStmt += '<div class="txt_wrap  align-content-between flex-wrap justify-content-center">';

@@ -35,6 +35,17 @@ var _activityData = {
       },
       //Draw with fillin
       {
+         "file"               : "drawwrite.html",
+         'type'               : 'drawwrite',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+    
+      {
          "file"               : "fillin_with_img.html",
          'type'               : 'fillin',
          'subtype'            : '',
@@ -75,6 +86,17 @@ var _activityData = {
          'score'              : 0,
       },
       //Circle with underline
+        //Circle with underlin 
+      {
+         "file"               : "circleunderline.html",
+         'type'               : 'circleunderline',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       {
          "file"               : "fillin_text_3.html",
          'type'               : 'fillin',

@@ -230,8 +230,8 @@ body {
 
 @media (max-width: 1399.98px) {
   .drag {
-    height: 66px;
-    margin: 1vh 0;
+    /* height: 66px;
+    margin: 1vh 0; */
   }
   .drop {
     /* height: 93px; */

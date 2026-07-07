@@ -70,7 +70,7 @@ function buildFillInBody(aObj) {
 			}
 
 		for (x = 0; x < numOfRows; x++) {
-			htmlStmt += '<div class="ques w-80 d-flex flex-wrap">';
+			htmlStmt += '<div class="ques w-80 d-flex flex-wrap justify-content-center">';
 			for (y = 0; y < numInRowArray[x].length; y++) {
 
 				htmlStmt += '<div class="p-0 q_box align-content-between flex-wrap">'; // put hight in css or data 

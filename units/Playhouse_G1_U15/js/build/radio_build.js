@@ -43,7 +43,7 @@ function buildStereo(stereo_data){
                                     slideHtml += '<div class="internal_controls">';
                                         slideHtml += '<i class="play fa fa-play"></i>';
                                         slideHtml += '<i class="pause fa fa-pause"></i>';
-                                        slideHtml += '<i class="restart fa fa-refresh" ></i>';
+                                        slideHtml += '<i class="restart fas fa-sync-alt"></i>';
                                     slideHtml += '</div>';
                                 slideHtml += '</span>';
                                 slideHtml += '<span class="right_Btn"></span>';
@@ -110,7 +110,7 @@ function showRaduiBox(){
 }
 
 function make_change_when_audio_play(audioElement) {
-    const targetTime = [[0,10],[11,20],[21,30],[31,39],[40,42]];//target time in seconds
+    const targetTime = [[0,15],[16,20],[21,30],[31,39],[40,42]];//target time in seconds
     audioElement.addEventListener('timeupdate', function() {
       
         const currentTime = parseInt(audioElement.currentTime);
@@ -136,7 +136,7 @@ function make_change_when_audio_play(audioElement) {
                 }
                 else if(stereo_data.type == "toggle_slide"){
                     $(".welcomeImage").hide(1000);
-                    if(currentTime >= 0 && currentTime < 16){
+                    if(currentTime >= 0 && currentTime < 24){
                         $(".slide_rule").fadeIn(1000);
                         $(".slide_example").hide();
                         $(".example_toggle_btn").removeClass("selected_btn")

@@ -446,14 +446,14 @@ footer .emt_space.noWidth {
 /* ====================================================== */
 @media (min-width: 1200px) {
 
-    .container,
+    /* .container,
     .container-sm,
     .container-md,
     .container-lg,
     .container-xl {
         max-width: 1360px;
 
-    }
+    } */
 }
 
 /* ------------------------------------------------ */

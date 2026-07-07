@@ -36,7 +36,7 @@ function buildHeader(aObj) {
         fStmt += "</div>";
 
         if (typeof (aObj.title).text != undefined && (aObj.title).text != null) {
-            fStmt += "<div class='unitTitle d-flex align-items-center justify-content-center mx-2'>";
+            fStmt += "<div class='unitTitle d-flex align-items-center justify-content-center mx-2' style='width: fit-content; max-width: fit-content;'>";
             if (typeof aObj.audio != undefined && aObj.audio != null) {
                 fStmt += "<div class='audioIcon off my-auto' data-audio='" + _templatePath + aObj.audio + "'>"
                 fStmt += "<div class='unitTitleText' rel='tooltip' data-placement='bottom' title='' data-original-title='" + (aObj.title).text + "'>" + (aObj.title).text + "</div>";        
@@ -47,7 +47,7 @@ function buildHeader(aObj) {
 
         fStmt += "<div class='col-1 col-xs-1 col-md-2 d-flex flex-wrap justify-content-between'>";
         
-            fStmt += "<div class='d-flex flex-wrap justify-content-between' style='width: 100%;'>";
+            fStmt += "<div class='d-flex' style='width: 100%;'>";
                 fStmt += '<img src="../images/icons/draw_icon.png"  class="toolbarToggleBtn" data-point="show_slide" >';
                 fStmt += "<div class='homeBtn my-auto " + ((homeVisible == 'yes') ? 'd-block' : 'd-none') + "'>";
                 fStmt += "<a href='" + homeLink + "?u=" + aObj.unitno + "'>";
