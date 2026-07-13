@@ -41,7 +41,7 @@ var _data = {
         "booksbutton" : {
             "workbook": {
                 'icon'   : '../images/icons/book-2.png',
-                'link'      : '../../Playhouse_G1/views/fillin_puzzle.html'
+                'link'      : '../../Playhouse_G1/views/crossword.html'
             },
             "studentbook": {
                 'icon'   : '../images/icons/book-1.png',

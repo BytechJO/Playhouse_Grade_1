@@ -142,6 +142,16 @@ var _activityData = {
          "visited"            : 0,
          "score"              : 0
       },
+       {
+         "file"               : "fillin_columns.html",
+         'type'               : 'fillin',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       // {
       //    'file'               : 'slide_Sentence_Building.html',
       //    'type'               : 'standAlone',

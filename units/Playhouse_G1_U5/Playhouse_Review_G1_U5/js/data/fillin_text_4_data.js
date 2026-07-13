@@ -5,7 +5,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : '<span class="red_text">1</span> Write the word.',
+    "subTitleTextLeft"      : '<span class="blue_text">1</span> Write the word.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],
     "subTitleAudio"         : "../audios/under.mp3",

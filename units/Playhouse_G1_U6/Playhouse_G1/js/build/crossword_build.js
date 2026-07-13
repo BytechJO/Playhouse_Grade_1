@@ -14,14 +14,35 @@ function buildCrosswordBody(aObj) {
 		htmlStmt +=  '</div>'
 
 		// ===================================================================== heading =====================
-		htmlStmt += '<div class="act_head_group justify-content-center">';
-			htmlStmt += '<div class="activityHeading">';
-				htmlStmt += '<div class="audioIcon off contant audioQuestionTitle" data-slideNum="' + 1 + '" data-audio="' + aObj.subTitleAudio + '">';
-					htmlStmt += "<div class='page_sub_title d-flex'>";
-						htmlStmt += "<p> " + aObj.subTitleTextLeft + " </p>";
-					htmlStmt += "</div>";
-				htmlStmt += '</div>';
+	htmlStmt += '<div class="act_head_group justify-content-center">';
+		htmlStmt += '<div class="audioIcon off contant " data-slideNum="' + 1 + '" data-audio="' + aObj.mainTitleAudio + '">';
+			htmlStmt += '<div class="q-type-img-container">';
+			htmlStmt += '<img class="mainTitle" src=' + aObj.mainTitle + '>';
+			if (aObj.mainTitleIcon != undefined && aObj.mainTitleIcon != '') {
+				htmlStmt += '<img class="mainTitleIcon" src=' + aObj.mainTitleIcon + ' style="right: ' + aObj.mainTitleIconPos.right + ';">';
+			}
 			htmlStmt += '</div>';
+		htmlStmt += '</div>';
+
+		htmlStmt += '<div class="activityHeading">'
+			htmlStmt += '<div class="audioIcon off contant audioQuestionTitle" data-slideNum="' + 1 + '" data-audio="' + aObj.subTitleAudio + '">';
+			if(aObj.title_position !=undefined && aObj.title_position =="under"){
+				htmlStmt += "<div class='page_sub_title'>";
+					htmlStmt += "<p> " + aObj.subTitleTextLeft + " </p>";
+					for (var sicons = 0 ; sicons < aObj.subTitleIcons.length ; sicons++) {
+						htmlStmt += "<img src='" + aObj.subTitleIcons[sicons] + "'/>";
+					}
+					htmlStmt += "<br><p class='subTitleTextRight'>" + aObj.subTitleTextRight + " </p>";
+				htmlStmt += "</div>";
+			}else {
+				htmlStmt += "<div class='page_sub_title d-flex'>";
+					htmlStmt += "<p> " + aObj.subTitleTextLeft + " </p>";
+				
+					// htmlStmt += "<p class='subTitleTextRight'>" + aObj.subTitleTextRight + " </p>";
+				htmlStmt += "</div>";
+			}
+			htmlStmt += '</div>';
+		htmlStmt += '</div>';
 		htmlStmt += '</div>';
 
 		// ===================================================================== all_cont =====================
@@ -35,7 +56,7 @@ function buildCrosswordBody(aObj) {
 
 			for (var c = 0; c < aObj.cells.length; c++) {
 				var cellObj = aObj.cells[c];
-				var gridCol = cellObj.col + 1; // CSS grid is 1-indexed
+				var gridCol = cellObj.col + 1;
 				var gridRow = cellObj.row + 1;
 				var cellClass = 'cw_cell' + (cellObj.type == 'highlight' ? ' cw_highlight' : '');
 
@@ -49,7 +70,6 @@ function buildCrosswordBody(aObj) {
 
 			htmlStmt += '</div>'; // - end crossword_grid
 
-			// ---- clue pictures, positioned by percentage over the grid wrap (responsive) ----
 			if(aObj.clueImages){
 				for (var ci = 0; ci < aObj.clueImages.length; ci++) {
 					htmlStmt += '<img class="cw_clue_img" src="' + aObj.clueImages[ci].img + '" style="top:' + aObj.clueImages[ci].top + '; left:' + aObj.clueImages[ci].left + ';"/>';

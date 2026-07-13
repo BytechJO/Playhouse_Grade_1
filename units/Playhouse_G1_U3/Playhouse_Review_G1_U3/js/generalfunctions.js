@@ -601,6 +601,14 @@ function setLoadedStatus(val) {
                 buildLetterPathBody(letterpath_data);
               }
               break;
+            case "drawwrite":
+              if (
+                typeof drawwrite_data != undefined &&
+                drawwrite_data != null
+              ) {
+                buildDrawWriteBody(drawwrite_data);
+              }
+              break;
           }
         } else {
           // console.log('no build');
@@ -625,6 +633,7 @@ function setLoadedStatus(val) {
           case "linedraw":
           case "dragndrop":
           case "coloring":
+          case "drawwrite":
             callActivityFunctions(
               _activityData,
               _actIndx,

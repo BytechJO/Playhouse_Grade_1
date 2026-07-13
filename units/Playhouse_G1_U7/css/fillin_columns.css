@@ -1,5 +1,5 @@
 .all_cont{
-    /* height: 100%; */
+    height: 100%;
     text-align: center;
     align-items: center;
     display: flex;
@@ -11,36 +11,40 @@
 }
 
 .group_elm{
-    width: 80%;
+    width: 95%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0px auto;
 }
-
-.fill_0 .text_input_area{
-    flex: none;
-  }
 
 .activityHeading b {
     color: #000;
 }
 
-.q_num_space{
-    width: 40px;
-    font-weight: bold;
+.func_ctrls{
+    display: none !important;
+}
+
+.word , .txt-audioIcon{
+    color: rgb(0, 185, 242);
+}
+
+.q_array_images img {
+    margin: 0px 20px;
+}
+
+.array_images_p16_2 img {
+    height: 113px;
 }
 
 .image_space {
-    width: 75%;
-    height: 342px;
+    width: 190px;
+    float: left;
     margin: 0px auto;
 }
   
 .image_space img {
-    height: 100%;
     width: 100%;
+    height: 135px;
     object-fit: contain;
 }
 
@@ -49,67 +53,61 @@
     font-weight: bolder;
 }
 
-.txt-audioIcon {
-    /* color: rgb(0, 185, 242); */
-    font-size: 27px;
-}
-
 .ques{
-    width: 100%;
-    align-items: center;
+    width: 90%;
+    /* height: 83%; */
+    gap: 20px;
     padding: 10px;
-    text-align: center;
 }
 
-.q_img {
-    margin: 0px 20px;
+.txt_wrap   {
+    width: 100%;
 }
-
-.q_img img{
-    height: 60px;
-}
-
 
 .q_box{
     width:  100%;
-    height: 70px;
+    /* height: 130px; */
+    display: flex;
+    align-items: center;
 }
 
-.fill_in .que {
+.fill_in .with_Img {
+    width: 75%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.fill_in .without_Img {
     width: 100%;
-    height: 85px;
 }
 
-.fillin_gr .q_space {
-    width: 100%;
-}
-.fillin_set {
+.txtBox {
     font-family: Arcon;
+    font-size: 25px;
     color: black;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
-.fillin_set input:focus{
+.txtBox input:focus{
     outline: none;
 }
 
-.fillin_set input {
-    flex: 2 2 10px;
-    height: 35px;
+.txtBox input {
+    flex: 1;
+    height: 40px;
     color: black;
     padding-left: 20px;
     border: none;
-    margin: 0px 15px;
-    border-bottom: 2px dashed #595a5a;
+    font-size: 27px;
+    border-bottom: 2px solid #7e7e7e;
 }
 
 .icon_wrap {
-    /* position: absolute;
+    position: absolute;
     margin-top: -35px; 
-    right: 100px; */
+    right: 170px;
 }
 
 .tick,
@@ -127,26 +125,24 @@
 }
 
 .clue_word {
-    padding: 2px 27px;
-    font-size: 22px;
+    margin: 5px;
+    padding: 0px 12px;
 }
 
 .word_options {
     width: 100%;
-    border-radius: 10px;
-    background-color: #c3f4ff8c;
+    font-size: 23px;
+    border: 2px solid var(--temp);
+    border-radius: 20px;
+    margin-bottom: 15px;
 }
 
 .word_opt_sticky {
-    width: 100%;
-    margin: 0px auto;
     position: -webkit-sticky;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     z-index: 5;
-    border: 2px solid var(--temp);
-    border-radius: 10px;
 }
 
 .words-list li{

@@ -19,7 +19,6 @@ Crossword.prototype = {
         this.buildCellIndex(ob);
         this.listen(ob);
     },
-    // build a lookup map "row_col" -> input element, so we can find neighbouring cells fast
     buildCellIndex:function(ob){
         var e = (ob.activity_area);
         var inputs = e.querySelectorAll('.cw_input');
@@ -31,7 +30,6 @@ Crossword.prototype = {
         this.cellMap = map;
     },
     findNextCell:function(row, col){
-        // prefer the next cell to the right; if none, try the next cell down
         var rightKey = row + '_' + (parseInt(col) + 1);
         if(this.cellMap[rightKey]) return this.cellMap[rightKey];
 
@@ -69,7 +67,6 @@ Crossword.prototype = {
             });
 
             inputs[i].addEventListener('keydown', function(evt){
-                // backspace on an empty cell -> jump back to the previous cell
                 if(evt.key == 'Backspace' && this.value.length == 0){
                     var prevCell = self.findPrevCell(this.dataset.row, this.dataset.col);
                     if(prevCell){ prevCell.focus(); }

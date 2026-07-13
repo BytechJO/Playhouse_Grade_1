@@ -1,5 +1,5 @@
 .all_cont{
-    /* height: 100%; */
+    height: 100%;
     text-align: center;
     align-items: center;
     display: flex;
@@ -10,18 +10,16 @@
     height: 100%;
 }
 
+
 .group_elm{
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-
-.fill_0 .text_input_area{
-    flex: none;
-  }
 
 .activityHeading b {
     color: #000;
@@ -50,25 +48,24 @@
 }
 
 .txt-audioIcon {
-    /* color: rgb(0, 185, 242); */
+    color: rgb(45, 45, 45);
     font-size: 27px;
 }
 
 .ques{
-    width: 100%;
+    width: 58%;
     align-items: center;
     padding: 10px;
     text-align: center;
 }
 
-.q_img {
-    margin: 0px 20px;
+.q_image {
+    width: 430px;
 }
 
-.q_img img{
-    height: 60px;
+.q_image img{
+    width: 100%;
 }
-
 
 .q_box{
     width:  100%;
@@ -78,6 +75,7 @@
 .fill_in .que {
     width: 100%;
     height: 85px;
+    position: relative;
 }
 
 .fillin_gr .q_space {
@@ -89,7 +87,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .fillin_set input:focus{
@@ -97,13 +94,19 @@
 }
 
 .fillin_set input {
-    flex: 2 2 10px;
+    /* flex: 2 2 10px; */
+    width: 187px;
     height: 35px;
     color: black;
     padding-left: 20px;
     border: none;
     margin: 0px 15px;
-    border-bottom: 2px dashed #595a5a;
+    border-bottom: 2px solid #595a5a;
+}
+
+.text_End {
+    position: absolute;
+    font-size: 23px;
 }
 
 .icon_wrap {

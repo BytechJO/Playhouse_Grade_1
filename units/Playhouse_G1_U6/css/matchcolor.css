@@ -35,11 +35,11 @@
     align-items: center;
 }
 
-.match_word_text{
+.match_word_text {
     font-family: Arcon, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #d8d8d8;
+    font-size: 60px;
+    /* font-weight: bold; */
+    color: transparent;
     -webkit-text-stroke: 1px #b0b0b0;
 }
 

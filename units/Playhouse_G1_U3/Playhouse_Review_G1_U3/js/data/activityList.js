@@ -70,15 +70,15 @@ var _activityData = {
       visited: 0,
       score: 0,
     },
-    // {
-    //    'file'               : 'circle_word_in_sentence_img.html',
-    //    'type'               : 'mcq',
-    //    'build'              : 'yes', // yes (or) no
-    //    'activityCtrls'      : 'yes',
-    //    'layout'             : 1,
-    //    'visited'            : 0,
-    //    'score'              : 0,
-    // },
+    {
+       'file'               : 'drawwrite.html',
+       'type'               : 'drawwrite',
+       'build'              : 'yes', // yes (or) no
+       'activityCtrls'      : 'yes',
+       'layout'             : 1,
+       'visited'            : 0,
+       'score'              : 0,
+    },
     // {
     //    "file"               : "fillin_text_in_sentences.html",
     //    'type'               : 'fillin',
