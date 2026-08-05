@@ -49,7 +49,7 @@ var _activity_json = {
         ]
     ],
     "options": ["1st", "2nd", "3rd", "4th","5th"],
-    "answers": ["4th","3rd","5th","1st", "2nd"],
+    "answers": ["1st","3rd","5th","4th", "2nd"],
     "default_answer": {}
 
 };

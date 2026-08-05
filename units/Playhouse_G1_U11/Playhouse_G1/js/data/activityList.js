@@ -24,16 +24,16 @@ var _activityData = {
          "visited"            : 0,
          "score"              : 0,
       },
-      {
-         "file"               : "tick_text_image_2.html",
-         "type"               : "mcq",
-         "subtype"            : 'tick',
-         "build"              : 'yes', // yes (or) no
-         "activityCtrls"      : 'yes',
-         "layout"             : 1,
-         "visited"            : 0,
-         "score"              : 0,
-      },
+      // {
+      //    "file"               : "tick_text_image_2.html",
+      //    "type"               : "mcq",
+      //    "subtype"            : 'tick',
+      //    "build"              : 'yes', // yes (or) no
+      //    "activityCtrls"      : 'yes',
+      //    "layout"             : 1,
+      //    "visited"            : 0,
+      //    "score"              : 0,
+      // },
       //Colour
        //Colour
       {

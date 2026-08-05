@@ -53,7 +53,7 @@ var fillin_data = {
             "audioenable": "default", // correct (or) default
             "image": "../images/pages/activities/p15-img-2.png",
             "textUnderImage": "sink",
-            "answer": ["There is a sink in the bathroom."],
+            "answer": ["There is a sink in the bathroom"],
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
         },
@@ -63,7 +63,7 @@ var fillin_data = {
             "audioenable": "default", // correct (or) default
             "image": "../images/pages/activities/p15-img-3.png",
             "textUnderImage": "sofa",
-            "answer": ["There is a sofa in the living room."],
+            "answer": ["There is a sofa in the living room"],
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
         },

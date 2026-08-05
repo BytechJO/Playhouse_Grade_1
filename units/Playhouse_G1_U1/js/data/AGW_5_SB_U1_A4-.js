@@ -56,7 +56,7 @@ var mcq_data = {
                 },
                 {
                     "text"          : "",
-                    "image"         : "../images/pages/activities/adv_2_2.png",
+                    "image"         : "../images/pages/activities/adv_2_3.png",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default
                 }                                 
@@ -64,7 +64,7 @@ var mcq_data = {
         },
         {
             "question"              : "<span style='color: rgb(0, 185, 242);'>What’s in the backpack?</span><br>A book and a camera.",
-            "answer"                : [2],
+            "answer"                : [1],
             // "image"                 : "../images/pages/activities/AGW_1_SB_U11_P108.png",
             "audio"                 : "no",
             "audioenable"           : "default", // correct (or) default
@@ -73,7 +73,7 @@ var mcq_data = {
             "options"               : [
 				{
                     "text"          : "",
-                    "image"         : "../images/pages/activities/adv_2_3.png",
+                    "image"         : "../images/pages/activities/adv_2_2.png",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default
                 },

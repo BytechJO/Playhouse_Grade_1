@@ -12,15 +12,15 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         'file'               : 'multiple_choice_2.html',
-         'type'               : 'mcq',
-         'build'              : 'yes', // yes (or) no
-         'activityCtrls'      : 'yes',
-         'layout'             : 1,
-         'visited'            : 0,
-         'score'              : 0,
-      },
+      // {
+      //    'file'               : 'multiple_choice_2.html',
+      //    'type'               : 'mcq',
+      //    'build'              : 'yes', // yes (or) no
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 1,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
       {
          "file"               : "drag_drop.html",
          "type"               : "standAlone",

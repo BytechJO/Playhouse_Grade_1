@@ -110,6 +110,25 @@ function initActivity(activity){
 			detectDragend();
 		});
 
+// --- عند الضغط على الـ input ترجع الكلمة للـ Word Bank ---
+$dropZone.on('click', 'input', function () {
+
+    var $input = $(this);
+    var word = $input.val();
+
+    if (!word) return;
+
+    // رجّع الكلمة للـ Word Bank
+    restoreWord(word);
+
+    // فضّي الـ input
+    $input.val('');
+    $input.removeAttr('data-filled');
+
+    // إذا عندك دالة بتفحص الإجابات استدعها
+    detectDragend();
+});
+
 	// --- فنكشن ارجاع الكلمة للـ options ---
 	function restoreWord(word) {
 		jQuery('.drag_drop_options div.draggable_div').filter(function() {

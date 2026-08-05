@@ -43,7 +43,7 @@ var mcq_data = {
         {
             "question"              : " [_] open book",
             "options"               : [["a","an"]],          
-            "answer"                : [1],
+            "answer"                : [2],
 			"inputbox"				:"yes",
 			"image"					: '',
             "audio"                 : "",
@@ -53,7 +53,7 @@ var mcq_data = {
         {
             "question"              : " [_] teacher",
             "options"               : [["a","an"]],
-            "answer"                : [2],
+            "answer"                : [1],
 			"inputbox"				: "yes",
 			"image"					: '',
             "audio"                 : "",
@@ -63,7 +63,7 @@ var mcq_data = {
         {
             "question"              : " [_] student",
             "options"               : [["a","an"]],
-            "answer"                : [2],
+            "answer"                : [1],
 			"inputbox"				: "yes",
 			"image"					: '',
             "audio"                 : "",

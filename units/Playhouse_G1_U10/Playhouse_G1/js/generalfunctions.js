@@ -631,6 +631,7 @@ function setLoadedStatus(val) {
           case "dragndrop":
           case "coloring":
           case "circleanswer":
+          case "letterpath":
             callActivityFunctions(
               _activityData,
               _actIndx,
@@ -808,19 +809,19 @@ function doWindowResize() {
   }
 
   //-------------
-if (isMobile()) {
+  if (isMobile()) {
     maskWidth = "0px";
   }
- 
+
   if ($(".mask_parent").length > 0) {
     var maskWidthNumber = parseFloat(maskWidth) || 0;
- 
+
     $(".rotator").css({
       right: maskWidthNumber - 15 + "px",
     });
   }
-} 
-  
+}
+
 function alignStage() {
   clearInterval(_alignInterval);
   _alignInterval = null;
