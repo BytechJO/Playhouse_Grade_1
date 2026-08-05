@@ -1,6 +1,6 @@
 var stereo_data = {
   audio: "",
-  exist: true,
+  exist: false,
   bgColor_rgb: "rgb(53, 130, 180)",
   type: "text",
   playListData: [
