@@ -42,7 +42,7 @@ function buildFillInBody(aObj) {
 			htmlStmt += '</div>';
 		htmlStmt += '</div>';
 
-		htmlStmt += '<div class="options cont_ht_sf mx-auto">';
+		htmlStmt += '<div class="options mx-auto">';
 		htmlStmt += '<div class="all_cont justify-content-start justify-content-sm-center">';
 		// options
 		if (typeof aObj.options != undefined && aObj.options != null) {

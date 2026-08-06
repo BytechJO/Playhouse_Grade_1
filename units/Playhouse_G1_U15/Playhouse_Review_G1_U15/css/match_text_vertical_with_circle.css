@@ -28,7 +28,7 @@ body {
 
 .all_cont{
   align-items: center;
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 .options {

@@ -68,7 +68,7 @@ function buildMcqBody(aObj) {
       htmlStmt += "<p class='ques_title'> " + aObj.quesTitleTextLeft + " </p>";
       htmlStmt += "</div>";
       htmlStmt += "</div>";
-      htmlStmt += '<div class="options cont_ht_sf mx-auto">';
+      htmlStmt += '<div class="options mx-auto">';
       htmlStmt += '<div class="all_cont justify-content-center">';
       htmlStmt +=
         '<div class="group_elm d-flex justify-content-center  align-items-center">';
