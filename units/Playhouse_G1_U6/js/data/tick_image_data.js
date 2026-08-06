@@ -57,7 +57,7 @@ var mcq_tick_data = {
                 },
                 {
                     "text"          : "",
-                    "image"         : "../images/pages/activities/P19_1_2.png",
+                    "image"         : "../images/pages/activities/p19_1_2.png",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default
                 },                              
@@ -79,7 +79,7 @@ var mcq_tick_data = {
                 },
                 {
                     "text"          : "",
-                    "image"         : "../images/pages/activities/P19_1_4.png",
+                    "image"         : "../images/pages/activities/p19_1_4.png",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default
                 },                              

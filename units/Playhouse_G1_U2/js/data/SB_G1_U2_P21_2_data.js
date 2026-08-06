@@ -64,7 +64,7 @@ var mcq_tick_data = {
                 },
                 {
                     "text"          : "He is my father.",
-                    "image"         : "../images/pages/activities/P21_2.png",
+                    "image"         : "../images/pages/activities/p21_2.png",
                     "audio"         : "../audios/under.mp3",
                     "audioenable"   : "default", // correct (or) default
                 },
