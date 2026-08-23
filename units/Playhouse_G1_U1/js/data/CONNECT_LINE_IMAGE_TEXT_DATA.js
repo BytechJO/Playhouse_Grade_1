@@ -71,28 +71,28 @@ var linedraw_data = {
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/conv_2_1.png",
-                "answer"        : [4],
-                "audio"         : "",
-                "audioenable"   : "default", // correct (or) default
-            },
-            {
-                "text"          : "",
-                "image"         : "../images/pages/activities/conv_2_2.png",
-                "answer"        : [1],
-                "audio"         : "",
-                "audioenable"   : "default", // correct (or) default
-            },
-            {
-                "text"          : "",
-                "image"         : "../images/pages/activities/conv_2_3.png",
                 "answer"        : [3],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
             {
                 "text"          : "",
-                "image"         : "../images/pages/activities/conv_2_4.png",
+                "image"         : "../images/pages/activities/conv_2_2.png",
+                "answer"        : [4],
+                "audio"         : "",
+                "audioenable"   : "default", // correct (or) default
+            },
+            {
+                "text"          : "",
+                "image"         : "../images/pages/activities/conv_2_3.png",
                 "answer"        : [2],
+                "audio"         : "",
+                "audioenable"   : "default", // correct (or) default
+            },
+            {
+                "text"          : "",
+                "image"         : "../images/pages/activities/conv_2_4.png",
+                "answer"        : [1],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             }
