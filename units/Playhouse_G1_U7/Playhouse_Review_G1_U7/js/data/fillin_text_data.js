@@ -17,7 +17,7 @@ var fillin_data = {
             "audio": "../audios/under.mp3",
             "audioenable": "correct", // correct (or) default
             "image": "../images/pages/activities/Asset_2.png",
-            "answer": ["He"],
+            "answer": ["thief"],
             "strictcase": "no", // yes (or) no              
             "type": "text", // text (or) number
         },
@@ -27,7 +27,7 @@ var fillin_data = {
             "audio": "../audios/under.mp3",
             "audioenable": "correct", // correct (or) default
             "image": "../images/pages/activities/Asset_3.png",
-            "answer": ["She"],
+            "answer": ["throne"],
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
         },
@@ -37,7 +37,7 @@ var fillin_data = {
             "audio": "../audios/under.mp3",
             "audioenable": "correct", // correct (or) default
             "image": "../images/pages/activities/Asset_4.png",
-            "answer": ["She"],
+            "answer": ["bath"],
             "strictcase": "no", // yes (or) no
             "type": "text", // text (or) number
         },

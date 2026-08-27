@@ -72,7 +72,7 @@ var fillin_data = {
             "audio": "../audios/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "",
-            "answer": ["E"],
+            "answer": ["A"],
             "maxlength":1,
             "strictcase": "no", // yes (or) no
             "type": "text", // text (or) number
@@ -83,7 +83,7 @@ var fillin_data = {
             "audio": "../audios/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "",
-            "answer": ["A"],
+            "answer": ["E"],
             "maxlength":1,
             "strictcase": "no", // yes (or) no
             "type": "number", // text (or) number

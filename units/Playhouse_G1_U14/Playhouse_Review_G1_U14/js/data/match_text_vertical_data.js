@@ -51,7 +51,7 @@ var linedraw_data = {
             {
                 "text"          : "lunch",
                 "image"         : "no",
-                "answer"        : [2],
+                "answer"        : [1],
                 "circleanswer"  : "onk",
                 "circle-options": ["m", "onk", "ey"],
                 "audio"         : "../audios/under.mp3",
@@ -60,14 +60,14 @@ var linedraw_data = {
             {
                 "text"          : "chocolate",
                 "image"         : "no",
-                "answer"        : [1],
+                "answer"        : [4],
                 "audio"         : "../audios/under.mp3",
                 "audioenable"   : "default", // correct (or) default
             },
             {
                 "text"          : "cheese",
                 "image"         : "no",
-                "answer"        : [4],
+                "answer"        : [2],
                 "audio"         : "../audios/under.mp3",
                 "audioenable"   : "default", // correct (or) default
             },

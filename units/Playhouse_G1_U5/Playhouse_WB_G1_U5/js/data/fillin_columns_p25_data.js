@@ -51,6 +51,7 @@ var fillin_data = {
             "audioenable": "default", // correct (or) default
             "image": "",
             "answer": ["They aren't tall"],
+             "alternateanswer": [["They are not tall"]],
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
         },
@@ -69,6 +70,7 @@ var fillin_data = {
             "audioenable": "default", // correct (or) default
             "image": "",
             "answer": ["We haven't got long hair"],
+             "alternateanswer": [["We have not got long hair"]],
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
         },

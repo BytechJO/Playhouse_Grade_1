@@ -36,6 +36,8 @@ var fillin_data = {
   "image"                 : "",
   "options"               : [],
   "optionsAudios"         : [],
+  // الترتيب مش مهم - أي إجابة صحيحة بأي خانة تُقبل طالما ما تكررت أكتر من مرة موجودة أصلًا
+  "answerOrderMatters"    : false,
   "questions": 
   [
     {
@@ -46,7 +48,7 @@ var fillin_data = {
       "option":"",
       "audio": "../audios/in.mp3",
       "audioenable": "default", // correct (or) default
-      "answer": ["Lilly’s house"],
+      "answer": ["Lilly's house"],
       "alternateanswer": [[]],
       "strictcase": "no", // yes (or) no  
       "strictorder": "yes", // yes (or) no              

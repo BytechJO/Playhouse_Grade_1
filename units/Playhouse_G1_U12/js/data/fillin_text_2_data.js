@@ -33,7 +33,7 @@ var fillin_data = {
   "onimgaudioplay"        : '',
   "numbering"             : "number", // "alphabet" (or) "number"
   "numberstartfrom"       : "a",
-  "image"                 : "",
+  "image"                 : "../images/pages/activities/Screenshot_4.png",
   "options"               : [],
   "optionsAudios"         : [],
   "questions": 

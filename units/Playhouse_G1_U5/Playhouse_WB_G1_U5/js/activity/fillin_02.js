@@ -1,9 +1,8 @@
 //  ****************************************** //
 //  FillIn - Version no: 1
 //  Date updated - June 3, 2020 
-//  Fix: تجاهل الخانات الجاهزة (readonly، بدون input - إجابة معطاة
-//       سلفًا عبر defaultAnswer) من عملية المقارنة، واعتبارها صحيحة
-//       تلقائيًا، بدل ما تُحسب "غلط" وتفسد نتيجة النشاط بالكامل
+//  Date updated - (added alternateanswer support: a blank can now
+//                  accept more than one valid correct answer)
 //  ****************************************** //
 window.FillIn = function(obj, dataObj){    
     ob = obj[0].getElementsByClassName("options");
@@ -62,22 +61,6 @@ FillIn.prototype = {
             var _wrong = 0;
             var inputBoxes = elsQue[i].querySelectorAll('input'); 
 
-            // ==========================================================
-            // ✅ FIX: خانة جاهزة (readonly عبر defaultAnswer) ما فيها
-            // أي input إطلاقًا - إجابتها معطاة سلفًا، فلازم تُعتبر صحيحة
-            // تلقائيًا وما تدخل بعملية المقارنة، بدل ما تُحسب "غلط"
-            // ==========================================================
-            if (inputBoxes.length === 0) {
-                resultArr[i] = 1;
-                if (fDataObj.audio != '' && fDataObj.audio != 'no') {
-                    if (fDataObj.audioenable == 'correct' && ((elsQue[i].querySelectorAll('.audioIcon')).length > 0)) {
-                        (elsQue[i].querySelector('.audioIcon')).classList.remove("disabled");
-                    }
-                }
-                // خانة جاهزة مالها داعي تيك/كروس - بتضل مخفية
-                continue;
-            }
-
             if(inputBoxes.length > 0){
                 for(var a=0;a<inputBoxes.length;a++){
                     console.log(a, inputBoxes[a].dataset.type);
@@ -104,7 +87,28 @@ FillIn.prototype = {
                     _cAns[cc] = (_case == 'yes')? _cAns[cc]: _cAns[cc].toLowerCase();  
                    _cAns[cc] = (_cAns[cc]).replace(/\s/g, '');
                    _uAns[cc] = (_uAns[cc]).replace(/\s/g, '');
-                    if(_cAns[cc] == _uAns[cc]){
+
+                   var isMatch = (_cAns[cc] == _uAns[cc]);
+
+                   // ------------------------------------------------------ //
+                   // إذا الإجابة الأساسية ما طابقت، منفحص alternateanswer[cc]
+                   // - مصفوفة إجابات بديلة مقبولة لنفس الفراغ. إذا فاضية
+                   // أو مش موجودة، السلوك بيضل زي الأصل بالظبط (backward
+                   // compatible مع أي داتا مالها alternateanswer أصلاً).
+                   // ------------------------------------------------------ //
+                   if(!isMatch && fDataObj.alternateanswer != undefined && fDataObj.alternateanswer[cc] != undefined && (fDataObj.alternateanswer[cc]).length > 0){
+                       var _cAltAns = getStrArray(fDataObj.alternateanswer[cc], 'activity');
+                       for(var alt=0; alt<_cAltAns.length; alt++){
+                           var normAlt = (_case == 'yes') ? _cAltAns[alt] : (_cAltAns[alt]).toLowerCase();
+                           normAlt = normAlt.replace(/\s/g, '');
+                           if(normAlt == _uAns[cc]){
+                               isMatch = true;
+                               break;
+                           }
+                       }
+                   }
+
+                    if(isMatch){
                         _corr++;
                         // if(_isReadOnly[cc] != 1)  {
                             // inputBoxes[cc].style.color = 'green';

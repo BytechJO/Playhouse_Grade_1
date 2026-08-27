@@ -140,7 +140,7 @@ var fillin_data = {
         "image": "../images/pages/activities/6-img-4.png",
         "imagePosition":"back",
         "answer": ["he can't"],
-        "alternateanswer": [[]],
+        "alternateanswer": [["he can not"]],
         "strictcase": "no", // yes (or) no     
         "strictorder": "yes", // yes (or) no             
         "maxlength": 50,

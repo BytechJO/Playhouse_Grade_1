@@ -100,7 +100,7 @@ var fillin_data = {
             "audio": "../audios/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "../images/pages/activities/3-img-7.png",
-            "answer": ["cloucy"],
+            "answer": ["cloudy"],
             "strictcase": "no", // yes (or) no
             "type": "text", // text (or) number
         },

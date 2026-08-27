@@ -37,7 +37,7 @@ function buildMatchColorBody(aObj) {
         htmlStmt += '<svg class="match_lines_svg"></svg>';
 
         // words row
-        htmlStmt += '<div class="match_words_row d-flex justify-content-around">';
+        htmlStmt += '<div class="match_words_row d-flex justify-content-center">';
         jQuery.each(aObj.words, function (i, w) {
             htmlStmt += '<div class="match_word_item" data-id="' + w.id + '">';
             htmlStmt += '<div class="audioIcon off contant" data-audio="' + w.audio + '">';
@@ -49,11 +49,15 @@ function buildMatchColorBody(aObj) {
         htmlStmt += '</div>';
 
         // images row
-        htmlStmt += '<div class="match_images_row d-flex justify-content-around">';
+        htmlStmt += '<div class="match_images_row d-flex justify-content-center">';
         jQuery.each(aObj.images, function (i, img) {
             htmlStmt += '<div class="match_image_item" data-id="' + img.id + '" data-matches="' + img.matchesWordId + '">';
             htmlStmt += '<div class="match_dot image_dot" data-id="' + img.id + '"></div>';
             htmlStmt += '<img class="colourable_img" src="' + img.image + '">';
+            htmlStmt += '<div class="icon_wrap">';
+            htmlStmt += '<div class="tick"><img src="../images/icons/check_btn.png"></div>';
+            htmlStmt += '<div class="cross"><img src="../images/icons/cross_btn.png"></div>';
+            htmlStmt += '</div>';
             htmlStmt += '</div>';
         });
         htmlStmt += '</div>';
@@ -119,6 +123,24 @@ function MatchColor(aContainer, aData) {
             }
         });
 
+        // ------------------------------------------------------------------ //
+        // الدوس على الكلمة نفسها (مش عالنقطة) -> يطلع باليت ألوان صغير
+        // تحتها، الطالب بيختار لون منه وبتتلون الكلمة (النص) مباشرة.
+        // هاد الشي منفصل تماماً عن التوصيل/الفاليديشن - قرار الطالب باللون
+        // مش موضوع فحص إطلاقاً.
+        // ------------------------------------------------------------------ //
+        self.container.off('click.wordText').on('click.wordText', '.match_word_text', function (e) {
+            e.stopPropagation();
+            self.showWordPalette($(this));
+        });
+
+        // اقفال أي باليت مفتوحة لو ضغط الطالب أي مكان تاني بالصفحة
+        $(document).off('click.closeWordPalette').on('click.closeWordPalette', function (e) {
+            if (!$(e.target).closest('.word_colour_palette, .match_word_text').length) {
+                $('.word_colour_palette').remove();
+            }
+        });
+
         $(window).off('resize.matchcolor').on('resize.matchcolor', function () {
             self.drawAllLines();
         });
@@ -127,6 +149,33 @@ function MatchColor(aContainer, aData) {
         $('.resetBtn').removeClass('disabled');
 
         initialSettingsDone(1);
+    };
+
+    // ------------------------------------------------------------------ //
+    // بيبني وبيفتح باليت الألوان تحت الكلمة المختارة، ووقت ما الطالب
+    // يدوس عَ لون منه بيلوّن نص الكلمة (.match_word_text) مباشرة.
+    // ------------------------------------------------------------------ //
+    self.showWordPalette = function ($word) {
+        $('.word_colour_palette').remove(); // اقفل أي باليت مفتوحة قبل
+
+        var paletteHtml = '<div class="word_colour_palette">';
+        jQuery.each(self.colourPalette, function (i, c) {
+            paletteHtml += '<span class="colour_swatch" data-colour="' + c + '" style="background-color:' + c + ';"></span>';
+        });
+        paletteHtml += '</div>';
+
+        var $palette = $(paletteHtml);
+        $word.closest('.match_word_item').append($palette);
+
+        $palette.off('click').on('click', '.colour_swatch', function (e) {
+            e.stopPropagation();
+            var chosenColour = $(this).data('colour');
+            $word.css({
+                'color': chosenColour,
+                '-webkit-text-stroke': '0px'
+            });
+            $palette.remove();
+        });
     };
 
     self.removeConnectionByWord = function (wordId) {
@@ -191,9 +240,15 @@ function MatchColor(aContainer, aData) {
 
             if (connectedWordId == img.matchesWordId) {
                 $imgItem.addClass('correct_match');
+                $imgItem.find('.icon_wrap').css('display', 'block');
+                $imgItem.find('.tick').css('display', 'block');
+                $imgItem.find('.cross').css('display', 'none');
                 if ($wordItem) $wordItem.addClass('correct_match');
             } else {
                 $imgItem.addClass('wrong_match');
+                $imgItem.find('.icon_wrap').css('display', 'block');
+                $imgItem.find('.cross').css('display', 'block');
+                $imgItem.find('.tick').css('display', 'none');
                 if ($wordItem) $wordItem.addClass('wrong_match');
                 allCorrect = false;
             }
@@ -210,7 +265,12 @@ function MatchColor(aContainer, aData) {
         $('.match_lines_svg').empty();
         $('.word_dot').removeClass('selected');
         $('.match_word_item, .match_image_item').removeClass('correct_match wrong_match');
+        $('.icon_wrap').css('display', 'none');
+        $('.tick, .cross').css('display', 'none');
         $('.colourable_img').removeClass('coloured').css('filter', 'none');
+        // شيل أي تلوين يدوي عالكلمات وأي باليت مفتوحة
+        $('.match_word_text').css({ 'color': '', '-webkit-text-stroke': '' });
+        $('.word_colour_palette').remove();
         $('.checkBtn').removeClass('disabled');
         $('.resetBtn').addClass('disabled');
     };

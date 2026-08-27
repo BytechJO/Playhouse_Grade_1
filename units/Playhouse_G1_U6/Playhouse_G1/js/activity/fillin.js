@@ -1,6 +1,9 @@
 //  ****************************************** //
 //  FillIn - Version no: 1
 //  Date updated - June 3, 2020 
+//  Date updated - (fixed: getStrArrayMy -> getStrArray, the custom
+//                  function name that doesn't exist anywhere else
+//                  in the project and was crashing validate())
 //  ****************************************** //
 window.FillIn = function(obj, dataObj){    
     ob = obj[0].getElementsByClassName("options");
@@ -52,7 +55,7 @@ FillIn.prototype = {
             (elsQue[i].querySelector('.tick')).style.display = 'none';
             (elsQue[i].querySelector('.cross')).style.display = 'none';
             var _case = (fDataObj.strictcase != undefined && fDataObj.strictcase!=null )? (fDataObj.strictcase).toLowerCase():'no';
-            var _cAns = getStrArrayMy(fDataObj.answer, 'activity');            
+            var _cAns = getStrArray(fDataObj.answer, 'activity');            
             var _uAns = [];
             var _isReadOnly = [];
             var _corr = 0;
@@ -85,7 +88,23 @@ FillIn.prototype = {
                     _cAns[cc] = (_case == 'yes')? _cAns[cc]: _cAns[cc].toLowerCase();  
                    _cAns[cc] = (_cAns[cc]).replace(/\s/g, '');
                    _uAns[cc] = (_uAns[cc]).replace(/\s/g, '');
-                    if(_cAns[cc] == _uAns[cc]){
+
+                   var isMatch = (_cAns[cc] == _uAns[cc]);
+
+                   // إجابات بديلة (alternateanswer) إذا موجودة ومش فاضية
+                   if(!isMatch && fDataObj.alternateanswer != undefined && fDataObj.alternateanswer[cc] != undefined && (fDataObj.alternateanswer[cc]).length > 0){
+                       var _cAltAns = getStrArray(fDataObj.alternateanswer[cc], 'activity');
+                       for(var alt=0; alt<_cAltAns.length; alt++){
+                           var normAlt = (_case == 'yes') ? _cAltAns[alt] : (_cAltAns[alt]).toLowerCase();
+                           normAlt = normAlt.replace(/\s/g, '');
+                           if(normAlt == _uAns[cc]){
+                               isMatch = true;
+                               break;
+                           }
+                       }
+                   }
+
+                    if(isMatch){
                         _corr++;
                         // if(_isReadOnly[cc] != 1)  {
                             // inputBoxes[cc].style.color = 'green';

@@ -33,7 +33,7 @@ var _activityData = {
     {
       file: "q4-index.html", // ← نفس اسمك الموجود
       type: "lookcirclewrite", // ← غيّرناه من standAlone
-      subtype: "none",
+      subtype: "",
       build: "yes",
       activityCtrls: "no",
       layout: 1,

@@ -46,7 +46,7 @@ var fillin_data = {
       "option":"",
       "audio": "../audios/in.mp3",
       "audioenable": "default", // correct (or) default
-      "answer": ["Is the weather hot?"],
+      "answer": ["The weather's hot"],
       "alternateanswer": [[]],
       "strictcase": "no", // yes (or) no  
       "strictorder": "yes", // yes (or) no              
@@ -61,7 +61,7 @@ var fillin_data = {
       "option":"",
       "audio": "../audios/in.mp3",
       "audioenable": "default", // correct (or) default
-      "answer": ["Is Kim seven years old?"],
+      "answer": ["Kim's seven years old"],
       "alternateanswer": [[]],
       "strictcase": "no", // yes (or) no     
       "strictorder": "yes", // yes (or) no             
@@ -76,7 +76,7 @@ var fillin_data = {
       "option":"",
       "audio": "../audios/in.mp3",
       "audioenable": "default", // correct (or) default
-      "answer": ["Are they your friends?"],
+      "answer": ["They're your friends"],
       "alternateanswer": [[]],
       "strictcase": "no", // yes (or) no     
       "strictorder": "yes", // yes (or) no             

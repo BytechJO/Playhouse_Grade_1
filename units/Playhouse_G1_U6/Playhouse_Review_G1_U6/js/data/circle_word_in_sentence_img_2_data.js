@@ -52,7 +52,7 @@ var mcq_data = {
         {
             "question"              : "[_]",
             "options"               : [[" He <span class='red_text'> &nbsp; can &nbsp; </span> sing."," He <span class='red_text'> &nbsp; can't &nbsp; </span> sing."]],
-            "answer"                : [2],
+            "answer"                : [1],
 			"inputbox"				:"yes",
 			"image"					: '../images/pages/activities/Asset_24.png',
             "audio"                 : "",

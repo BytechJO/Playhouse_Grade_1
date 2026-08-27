@@ -63,7 +63,7 @@ var fillin_data = {
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["on July 6th"],
+          "answer": ["6th on July"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no     
           "strictorder": "yes", // yes (or) no             
@@ -95,7 +95,7 @@ var fillin_data = {
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["on July 26th"],
+          "answer": ["26th on July"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no    
           "strictorder": "yes", // yes (or) no              

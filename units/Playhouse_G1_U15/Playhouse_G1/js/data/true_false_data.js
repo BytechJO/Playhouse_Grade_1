@@ -46,7 +46,7 @@ var mcq_data = {
         {
             "question"              : "<b>1</b> &nbsp;  He is wearing a striped shirt and shorts.",
             "options"               : ["True","False"],
-            "answer"                : [1],
+            "answer"                : [2],
             "audio"                 : "../audios/under.mp3",
             "audioenable"           : "default", // correct (or) default 
             
@@ -70,7 +70,7 @@ var mcq_data = {
         {
             "question"              : "<b>4</b> &nbsp; She is wearing a dress and shoes.",
             "options"               :  ["True","False"],
-            "answer"                : [2],
+            "answer"                : [1],
             "audio"                 : "../audios/under.mp3",
             "audioenable"           : "default", // correct (or) default
             

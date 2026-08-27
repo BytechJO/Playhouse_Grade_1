@@ -50,8 +50,8 @@ var fillin_data = {
             "audio": "../audios/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "../images/pages/activities/4-img-2.png",
-            "answer": ["It's sunny"],
-            "alternateanswer": [["It is sunny"]],
+            "answer": ["It's hot"],
+          "alternateanswer": [["It is hot"]],
             // "answer2":["It is sunny"],
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
@@ -74,7 +74,7 @@ var fillin_data = {
           "audio": "../audios/under.mp3",
           "audioenable": "default", // correct (or) default
           "image": "../images/pages/activities/4-img-4.png",
-          "answer": ["It's cold and snowy"],
+          "answer": ["It's cold"],
           "alternateanswer": [["It's cold","It's snowy"]],
           // "answer2":["It's cold","It's snowy"],
           "strictcase": "no", // yes (or) no              
@@ -86,8 +86,8 @@ var fillin_data = {
           "audio": "../audios/under.mp3",
           "audioenable": "default", // correct (or) default
           "image": "../images/pages/activities/4-img-5.png",
-          "answer": ["It's hot"],
-          "alternateanswer": [[]],
+               "answer": ["It's sunny"],
+            "alternateanswer": [["It is sunny"]],
           "strictcase": "no", // yes (or) no 
           "type": "text", // text (or) number
       },
@@ -97,8 +97,8 @@ var fillin_data = {
           "audio": "../audios/under.mp3",
           "audioenable": "default", // correct (or) default
           "image": "../images/pages/activities/4-img-6.png",
-          "answer": ["It's rainy."],
-          "alternateanswer": [[]],
+          "answer": ["It's rainy"],
+          "alternateanswer": [["It is rainy"]],
           "strictcase": "no", // yes (or) no
           "type": "text", // text (or) number
       },

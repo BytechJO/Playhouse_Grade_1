@@ -1,37 +1,41 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Look, Circle and Write</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        playhouse
+    </title>
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <style id='ui_style'>
+    </style>
+    <link rel="stylesheet" href="../css/all.min.css">
+        <!-- Font Awesome -->
+          <!-- <script src="../js/build/fontawesome.js"></script> -->
 
-    <!-- نفس CSS imports الـ MCQ بالضبط -->
-    <link rel="stylesheet" href="../css/jquery-ui.min.css" />
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css" />
-    <style id="ui_style"></style>
-    <link rel="stylesheet" href="../css/all.min.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/unit_styles.css" />
-    <link rel="stylesheet" href="../css/activities.css" />
-    <link rel="stylesheet" href="../css/audio.css" />
-    <!-- CSS خاص بالسؤال -->
-    <link rel="stylesheet" href="../css/style-q4.css" />
+        <link rel="stylesheet" href="../css/draw.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/unit_styles.css">
+    <link rel="stylesheet" href="../css/activities.css">
+    <link rel="stylesheet" href="../css/audio.css"> 
 
-    <!-- نفس JS imports الـ MCQ بالضبط -->
+    <link rel="stylesheet" href="../css/style-q4.css">
+
+    <!-- [ Activity build CSS file ] -->
     <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
-    <script
-      src="../js/bootstrap/bootstrap.bundle.min.js"
-      type="text/javascript"
-    ></script>
-    <script
-      src="../js/jquery.ui.touch-punch.min.js"
-      text="text/javascript"
-    ></script>
+    <script src="../js/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.ui.touch-punch.min.js" text="text/javascript"></script>
+    <!-- [ Data for Header and Footer ] -->
     <script src="../js/data/templateData.js" type="text/javascript"></script>
+    <!-- [ / Data for Header and Footer ] -->
+    <!-- [ Data containing all activity files ] -->
     <script src="../js/data/activityList.js" type="text/javascript"></script>
-    <script src="../js/build/jsonRender.js"></script>
+    <script src="../js/data/data-q4.js" type="text/javascript"></script>
+    <script src="../js/build/jsonRender.js"></script></script>
+  
   </head>
 
   <body>
@@ -110,15 +114,16 @@
       var _mediaList = { image: [], audio: [], video: [] };
     </script>
 
-    <!-- نفس script order الـ MCQ -->
-    <script src="../js/build/template.js" type="text/javascript"></script>
-    <script src="../js/build/audio.js"></script>
-    <script src="../js/build/radio_build.js" type="text/javascript"></script>
-    <script src="../js/generalfunctions.js" type="text/javascript"></script>
+ 
+    <script src='../js/build/toolbar.js' type='text/javascript'></script>
+     <script src="../js/build/template.js" type="text/javascript"></script>
+     <script src="../js/build/app-q4.js" type="text/javascript"></script>
+     <script src="../js/build/audio.js"></script>
+     <script src='../js/build/radio_build.js' type='text/javascript'></script>
+    <script src='../js/generalfunctions.js' type='text/javascript'></script>
+    <!-- <script src="../js/activity/mcq.js" type="text/javascript"></script> -->
     <script src="../js/activities.js" type="text/javascript"></script>
-    <!-- ملفات السؤال -->
-    <script src="../js/data/data-q4.js" type="text/javascript"></script>
-    <script src="../js/build/app-q4.js" type="text/javascript"></script>
-    <script src="../js/loading.js" type="text/javascript"></script>
+    <script src='../js/loading.js' type='text/javascript'></script>
+    <script src='../js/sketchpad.js' type='text/javascript'></script>
   </body>
 </html>

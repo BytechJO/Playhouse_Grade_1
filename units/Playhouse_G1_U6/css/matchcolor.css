@@ -26,7 +26,8 @@
 .match_words_row{
     position: relative;
     z-index: 2;
-    margin-bottom: 60px;
+        gap: 113px;
+    margin-bottom: 70px;
 }
 
 .match_word_item{
@@ -55,6 +56,7 @@
 
 .match_images_row{
     position: relative;
+        gap: 113px;
     z-index: 2;
 }
 
@@ -118,5 +120,98 @@
     .colourable_img{
         width: 90px;
         height: 90px;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* باليت ألوان الكلمة - عناصر جديدة بس، ما لمسنا أي شي من الـ CSS
+   الأصلي. .match_word_item لازم position:relative عشان الباليت
+   تتموضع صح تحت الكلمة. */
+/* ------------------------------------------------------------------ */
+.match_word_item {
+    position: relative;
+}
+
+.match_word_text {
+    cursor: pointer;
+}
+
+.word_colour_palette {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    display: flex;
+    gap: 6px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 6px 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.colour_swatch {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px #ccc;
+    transition: transform 0.15s ease;
+}
+
+.colour_swatch:hover {
+    transform: scale(1.15);
+}
+
+@media (max-width: 767.98px) {
+    .colour_swatch {
+        width: 18px;
+        height: 18px;
+    }
+    .word_colour_palette {
+        padding: 5px 6px;
+        gap: 5px;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* التيك/الإكس فوق كل صورة - زاوية عليا يمين، مخفيين افتراضياً لحد
+   ما يدوس الطالب Check (validate() هي يلي بتظهرهم). */
+/* ------------------------------------------------------------------ */
+.match_image_item {
+    position: relative;
+}
+
+.match_image_item .icon_wrap {
+    display: none;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    z-index: 5;
+}
+
+.match_image_item .tick,
+.match_image_item .cross {
+    display: none;
+    width: 28px;
+    height: 28px;
+}
+
+.match_image_item .tick img,
+.match_image_item .cross img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .match_image_item .tick,
+    .match_image_item .cross {
+        width: 20px;
+        height: 20px;
     }
 }

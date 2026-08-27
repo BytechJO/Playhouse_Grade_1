@@ -38,7 +38,7 @@ var fillin_data = {
             "question"      :"<span class='fontWeight'>p</span> + <span class='fontWeight'>en</span> =",
             "audio"         : "../audios/in.mp3",
             "audioenable"   : "correct", // correct (or) default
-            "image"         : "../images/pages/activities/U1-Q1-8.png",
+            "image"         : "../images/pages/activities/pen.png",
             "answer"        : ["pen"],
             "strictcase"    : "no", // yes (or) no              
             "type"          : "text", // text (or) number

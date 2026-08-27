@@ -46,8 +46,8 @@ var fillin_data = {
           "audioenable": "default", // correct (or) default
           "image": "../images/pages/activities/2-img-3.png",
           "postion":"back",
-          "answer": ["I don't like crisps and fizzy drinks."],
-          "alternateanswer": [[]],
+          "answer": ["I don't like crisps and fizzy drinks"],
+          "alternateanswer": [["I do not like crisps and fizzy drinks","I do not like crisps and cola","I don't like crisps and cola"]],
           "strictcase": "no", // yes (or) no  
           "strictorder": "yes", // yes (or) no              
           "maxlength": 200,

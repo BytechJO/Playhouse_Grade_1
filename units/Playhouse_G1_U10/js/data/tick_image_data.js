@@ -64,7 +64,7 @@ var mcq_tick_data = {
         {
             "question"              : "",
             "image"                 : "",
-            "answer"                : [2],
+            "answer"                : [1],
             "audio"                 : "no",
             "audioenable"           : "default", // correct (or) default
 			"numbering"				: "none", // alphabet (or) number (or) none
@@ -109,7 +109,7 @@ var mcq_tick_data = {
         },
         {
             "question"              : "",
-            "answer"                : [2],
+            "answer"                : [1],
             "audio"                 : "no",
             "audioenable"           : "default", // correct (or) default
 			"numbering"				: "none", // alphabet (or) number (or) none

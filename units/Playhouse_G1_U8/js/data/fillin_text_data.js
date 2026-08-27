@@ -46,7 +46,7 @@ var fillin_data = {
       "option":"",
       "audio": "../audios/in.mp3",
       "audioenable": "default", // correct (or) default
-      "answer": ["the cat’s tail"],
+      "answer": ["the cat's tail"],
       "alternateanswer": [[]],
       "strictcase": "no", // yes (or) no  
       "strictorder": "yes", // yes (or) no              
