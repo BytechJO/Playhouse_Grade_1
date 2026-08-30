@@ -54,3 +54,11 @@ var lookcirclewrite_data = {
         }
     ]
 };
+
+
+ 
+// activities.js (الملف العام) بيتوقع وجود هاد المتغيّر عند كبسة
+// "Start Again" (initActivity(_activity_json)) - حتى لو نشاطنا الخاص
+// (lookcirclewrite.js) ما بيستخدم قيمته فعليًا، لازم يكون معرّف
+// عشان ما يطلع ReferenceError
+var _activity_json = lookcirclewrite_data;

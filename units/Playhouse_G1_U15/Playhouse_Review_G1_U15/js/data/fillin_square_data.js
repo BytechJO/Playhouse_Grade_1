@@ -57,7 +57,7 @@ var wordsearch_data = {
                     "audioenable"   : "default", // correct (or) default
                 },
                 {
-                    "text"          : "T-shirt",
+                    "text"          : "t-shirt",
                     "image"         : "",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default
